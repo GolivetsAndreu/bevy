@@ -4,9 +4,9 @@
 		$friend = $_GET['user'];
 		$idUser = $GLOBALS['userinfo'];
 		$idUser = $idUser['id'];
-		$result = $conn->query("SELECT * FROM friends WHERE idUser = '$idUser'");
+		$result = $conn->query("SELECT * FROM friends WHERE idUser = '$idUser' AND idFriend = '$idUser'");
 		$result = $result->fetch_assoc();
-		if($friend == $result['idFriend']) {
+		if($friend == $result['idFriend'] || $friend == $result['idUser']) {
 			echo '<br><br><form method="POST" action="controllers/index/indexController.php">
 			<input type="submit" style="width:200px;cursor:pointer;" name="delete" value="Удалить из друзей"/>
 			<input type="hidden" value="'.$result["id"].'" name="id"/>
