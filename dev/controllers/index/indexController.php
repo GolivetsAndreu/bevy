@@ -4,23 +4,20 @@
 		$friend = $_GET['user'];
 		$idUser = $GLOBALS['userinfo'];
 		$idUser = $idUser['id'];
-		$result = $conn->query("SELECT * FROM friends WHERE idUser = '$idUser' AND idFriend = '$idUser'");
-		while(($row = $result->fetch_assoc()) !=false){
-			if(($friend == $row['idFriend'] && $idUser == $row['idUser']) || ($friend == $row['idUser'] && $idUser == $row['idFriend'])) {
-				echo '<br><br><form method="POST" action="controllers/index/indexController.php">
-				<input type="submit" style="width:200px;cursor:pointer;" name="delete" value="Удалить из друзей"/>
-				<input type="hidden" value="'.$row["id"].'" name="id"/>
-				</form>';
-				break;
-			}
-			else{
-				echo '<br><br><form method="POST" action="controllers/index/indexController.php">
-				<input type="submit" style="width:200px;cursor:pointer;" name="insert" value="Добавить в друзья"/>
-				<input type="hidden" value="'.$friend.'" name="id"/>
-				<input type="hidden" value="'.$idUser.'" name="user"/>
-				</form>';
-				break;
-			}
+		$result = $conn->query("SELECT * FROM friends WHERE idUser = '$idUser'");
+		$result = $result->fetch_assoc();
+		if($friend == $result['idFriend']) {
+			echo '<br><br><form method="POST" action="controllers/index/indexController.php">
+			<input type="submit" style="width:200px;cursor:pointer;" name="delete" value="Удалить из друзей"/>
+			<input type="hidden" value="'.$result["id"].'" name="id"/>
+			</form>';
+		}
+		else{
+			echo '<br><br><form method="POST" action="controllers/index/indexController.php">
+			<input type="submit" style="width:200px;cursor:pointer;" name="insert" value="Добавить в друзья"/>
+			<input type="hidden" value="'.$friend.'" name="id"/>
+			<input type="hidden" value="'.$idUser.'" name="user"/>
+			</form>';
 		}
 	}
 	function insertFriend(){
