@@ -1,0 +1,26 @@
+@media only screen and (max-width: 530px) {
+  .videos__wrapper {
+  	display: block;
+  }
+
+  .videos__wrapper .videos__item {
+  	margin: 20px auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .commentPad {
+    padding: 30px 0 20px 10px;
+  }
+  .closePopUp-wrapper {
+    right: 10px;
+    top: 20px;
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .closePopUp-wrapper {
+    font-size: 20px;
+  }
+}

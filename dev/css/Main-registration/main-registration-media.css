@@ -1,0 +1,72 @@
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+	.reg-main__left-inner { 
+		width: 90%; 
+		padding: 0 30px 80px 30px;
+	}
+
+	.reg-main__left-heading { padding-top: 20px; }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+	.reg-main__right span { font-size: 20px; }
+
+	.reg-main__right h1 { font-size: 60px; }
+	
+	.reg-main__geom { border-right: 3px solid #fafafa; }
+	
+	.reg-main__geom.reg-main__vr_active { height: 90px; }
+
+	.reg-main__geom span { top: 20px; font-size: 20px; }
+
+	.reg-main__btn { width: 100%; font-size: 14px; }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+	.reg-main__left-heading { padding-top: 0; }
+
+	.reg-main__inner {
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.reg-main__geom, .reg-main__right span { display: none; }
+
+	.reg-main__left {
+		width: 90%;
+		height: auto;
+		padding: 30px 20px 0 20px;
+		border-radius: 10px;
+		padding-bottom: 20px;
+		margin-top: 70px;
+		margin-bottom: 70px;
+	}
+
+	.reg-main__right {
+		height: auto;
+		position: absolute;
+		top: -15px;
+		left: 0;
+		width: 100%;
+		padding: 20px 0 10px 0;
+	}
+
+	.reg-main__right h1 { font-size: 30px; }
+
+	.reg-main {
+		height: auto;
+		overflow: unset;
+	}
+
+	.reg-main__left-inner { padding-bottom: 0; }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+	.reg-main__left { padding: 20px; }
+
+	.reg-main__btn { width: 100%; font-size: 12px; }
+}

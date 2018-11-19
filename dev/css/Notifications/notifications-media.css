@@ -1,0 +1,63 @@
+/*==========  Desktop First  ==========*/
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .notif {
+    width: 100%;
+  }
+  .notif .notif__item {
+    padding: 8px 10px;
+    margin-bottom: 15px;
+  }
+  .notif .notif__item .notif__item-user-name {
+    font-size: 17px;
+  }
+  .notif .notif__item .notif__item-message {
+    font-size: 14px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .notif .notif__item {
+    padding: 5px 8px;
+    margin-bottom: 12px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .notif .notif__item .notif__item-user-name {
+    font-size: 14px;
+  }
+  .notif .notif__item .notif__item-message {
+    font-size: 12px;
+  }
+  .notif .notif__item .notif__item-date {
+    top: 3px;
+    right: 5px;
+    font-size: 7px;
+  }
+  .notif .notif__item .notif__item-user {
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .notif .notif__item .notif__item-user-name {
+    font-size: 11px;
+  }
+  .notif .notif__item .notif__item-message {
+    font-size: 9px;
+  }
+  .notif .notif__item .notif__item-date {
+    top: 1px;
+    font-size: 6px;
+  }
+  .notif .notif__item .notif__item-user {
+    height: 20px;
+    width: 20px;
+  }
+}

@@ -1,0 +1,6 @@
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 768px) {
+  .settings .settings__content .settings__content-item .settings__content-item-content {
+    padding-left: 0;
+  }
+}

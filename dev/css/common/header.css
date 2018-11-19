@@ -1,0 +1,100 @@
+.navbar {
+  background: #1a54e7;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  padding: 8px 0;
+  top: 0;
+}
+
+.navbar_active {
+   padding: 5px 0;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+        -ms-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+        -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+}
+
+.profile-prew {
+  height: 40px;
+  width: 40px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.header__nav a {
+  color: #fafafa;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.header__nav a:hover {
+  color: #ddd;
+}
+
+.header__settings-btn {
+  color: #fafafa;
+  font-size: 25px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.header__settings-btn.header__settings-btn_active {
+  -webkit-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.header__settings-drop {
+  width: 250px;
+  background: #fafafa;
+  left: -220px;
+  z-index: 100;
+  border-bottom: 2px solid silver;
+}
+
+.header__settings-drop a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  padding: 10px 10px 10px 20px;
+}
+
+.header__settings-drop a:first-child {
+  -webkit-border-top-right-radius: 5px;
+          border-top-right-radius: 5px;
+  -webkit-border-top-left-radius: 5px;
+          border-top-left-radius: 5px;
+}
+
+.header__settings-drop a:last-child {
+  -webkit-border-bottom-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+}
+
+.header__settings-drop a:hover {
+  background: #f3f3f3;
+}
+
+.header__menu-item-mobile, .header__settings-drop {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .header__menu-item-mobile { display: block; }
+
+  .header__setting, .profile-content__user-photo-change { display: none; }
+
+  .navbar-toggler i { color: #fafafa; }
+
+  .header__nav { text-align: center; }
+}

@@ -1,0 +1,19 @@
+.capcha {
+    width: 50%;
+    padding-top: 10px;
+}
+
+.capcha-label {
+	font-size: 20px;
+	font-weight: 600;
+	font-family: 'Arial', sans-serif;
+	padding: 9px 5px 0 0;
+}
+
+.capcha-answer {
+	border: none;
+	border-radius: 5px;
+	font-weight: 600;
+	font-size: 20px;
+	width: 23px;
+}

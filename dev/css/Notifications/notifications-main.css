@@ -1,0 +1,49 @@
+@import "../common/base.css" screen;
+@import "../common/fonts.css" screen;
+@import "../common/header.css" screen;
+@import "../common/footer.css" screen;
+
+.notif {
+  width: 75%;
+}
+
+.notif .notif__item {
+  background: #fff;
+  padding: 15px 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.notif .notif__item * {
+  cursor: pointer;
+}
+
+.notif .notif__item .notif__item-user {
+  height: 50px;
+  width: 50px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  margin-right: 10px;
+}
+
+.notif .notif__item .notif__item-user-name {
+  font-size: 19px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.notif .notif__item .notif__item-message {
+  font-size: 16px;
+  color: #333;
+}
+
+.notif .notif__item .notif__item-date {
+  top: 8px;
+  right: 14px;
+  font-size: 11px;
+  color: #666666;
+}
+
+.notif .notif__old > div {
+  opacity: .7;
+}

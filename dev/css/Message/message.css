@@ -1,0 +1,65 @@
+@import "../common/base.css" screen;
+@import "../common/fonts.css" screen;
+@import "../common/header.css" screen;
+@import "../common/footer.css" screen;
+
+.message-add {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.message-add-btn{
+	border: none;
+	background: #1a54e7;
+	color: #fafafa;
+	padding: 5px 10px;
+	cursor: pointer;
+	width:180px;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	font-weight: 600;
+	border-radius:10px;
+}
+.message-add-btn:hover{
+	background: #31b434;
+}
+
+.message-list {
+	width: 810px;
+	margin: 0 auto 50px auto;
+}
+.message-card {
+	padding: 10px;
+	height:100px;
+	width: 100%;
+	margin-top:35px;
+	background-color:#e4e4e4;
+	border-radius:20px;
+	position: relative;
+}
+
+.message-old__wrapper > div { opacity: .7 }
+
+.message-user-foto{
+	float:left;
+	margin-top:15px;
+	margin-left:30px;
+}
+.message-user-name{
+	margin-left:90px;
+	margin-top:8px;
+	font-size:16px;
+}
+.message-name{
+	float:left;
+	margin-left:15px;
+	margin-top:3px;
+	font-size:14px;
+}
+.message-date{
+	font-size: 15px;
+	position: absolute;
+	top: 10px; 
+	right: 20px;
+}

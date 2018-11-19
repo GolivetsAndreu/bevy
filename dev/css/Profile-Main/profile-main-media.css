@@ -1,0 +1,24 @@
+/*==========  Desktop First  ==========*/
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .profile-content__user-photo {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .profile-content__user-data {
+    text-align: center;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .profile-content__right-media {
+    display: none;
+  }
+}

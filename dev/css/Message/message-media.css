@@ -1,0 +1,13 @@
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) { .message-list { width: 100%; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+	.message-user-foto { margin-left: 10px; }
+
+	.message-date { font-size: 11px; top: 5px; }
+
+	.message-name { margin-left: 9px; }
+
+	.message-user-name { margin-left: 10px; }
+}

@@ -1,0 +1,132 @@
+.post {
+    background: #fff;
+    padding: 10px 20px 0 10px;
+    margin-bottom: 25px;
+}
+
+.post-info {
+  padding-left: 10px;
+}
+
+.post-info .post-author {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: .9em;
+}
+
+.post-info .post-author a {
+  color: #333;
+  text-decoration: none;
+}
+
+.post-info .post-date {
+  font-size: 11px;
+  color: #666666;
+}
+
+.post-info-right span {
+  font-size: 15px;
+  color: #8f8f8f;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.post-info-right span:hover {
+  color: #1a54e7;
+}
+
+/*.post-settings-drop {
+  left: -100px;
+  top: 20px;
+  z-index: 100;
+  background: #fff;
+  border: 1px solid #1a54e7;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.post-settings-drop a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #333;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.post-settings-drop a:hover {
+  color: #1a54e7;
+}*/
+
+.post-content {
+  padding: 15px 35px;
+}
+
+.post-content .post-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+
+.post-content .post-attachment {
+  margin-bottom: 25px;
+}
+
+.post-content .post-comment-text {
+  padding-left: 50px;
+}
+
+.post-add-comment {
+  margin-bottom: 0;
+}
+
+.post-add-comment .post-add-comment-media i {
+  margin-left: 15px;
+  margin-right: 0;
+}
+
+.post-add-comment textarea {
+  width: 85%;
+}
+
+.post-edit-comment {
+  font-size: 12px;
+  color: #666666;
+  padding-top: 5px;
+}
+
+.post-edit-comment span {
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.post-edit-comment span:hover {
+  color: #1a54e7;
+}
+
+#like:hover, #share:hover {
+  color: #333;
+}
+
+#like.like_active {
+  color: red;
+}
+
+#share.share_active {
+  color: #1a54e7;
+}
+
+@media only screen and (max-width: 480px) {
+  .post-content {
+    padding: 15px 0;
+  }
+
+  .post-add-comment button {
+    display: none;
+  }
+}

@@ -1,0 +1,13 @@
+@import "../common/base.css" screen;
+@import "../common/fonts.css" screen;
+@import "../common/header.css" screen;
+@import "../common/footer.css" screen;
+
+.up-pass-s__heading h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.up-pass-s__block {
+    padding: 20px 50px;
+}

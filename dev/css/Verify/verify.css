@@ -1,0 +1,71 @@
+@import "../common/base.css" screen;
+@import "../common/fonts.css" screen;
+@import "../common/header.css" screen;
+@import "../common/footer.css" screen;
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 5px rgba(26, 84, 231, 0.2);
+            box-shadow: 0 0 5px rgba(26, 84, 231, 0.2);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 5px rgba(26, 84, 231, 0.9);
+            box-shadow: 0 0 5px rgba(26, 84, 231, 0.9);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 5px rgba(26, 84, 231, 0.2);
+            box-shadow: 0 0 5px rgba(26, 84, 231, 0.2);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 5px rgba(26, 84, 231, 0.2);
+            box-shadow: 0 0 5px rgba(26, 84, 231, 0.2);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 5px rgba(26, 84, 231, 0.9);
+            box-shadow: 0 0 5px rgba(26, 84, 231, 0.9);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 5px rgba(26, 84, 231, 0.2);
+            box-shadow: 0 0 5px rgba(26, 84, 231, 0.2);
+  }
+}
+
+.verify-heading h3 {
+    font-size: 19px;
+}
+
+.verify__input-set input {
+  padding: 5px 0 5px 15px;
+  border: 2px solid silver;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+  -o-transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+  transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.reg-main__input:focus {
+  -webkit-animation: pulse 2s infinite ease-in-out;
+          animation: pulse 2s infinite ease-in-out;
+}
+
+.verify__button-set button {
+    padding: 4px 20px;
+    background: #1a54e7;
+    color: #fafafa;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+    border: none;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}

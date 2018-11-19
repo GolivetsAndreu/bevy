@@ -1,0 +1,15 @@
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .dialog .dialog__item .dialog__item-date {
+    font-size: 9px;
+  }
+  .dialog .dialog__item .dialog__item-pic {
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+  }
+  .dialog .dialog__item .dialog__author {
+    font-size: 15px;
+    font-weight: 600;
+  }
+}

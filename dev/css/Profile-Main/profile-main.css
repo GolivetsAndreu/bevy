@@ -1,0 +1,113 @@
+@import "../common/base.css" screen;
+@import "../common/fonts.css" screen;
+@import "../common/post.css" screen;
+@import "../common/add-post.css" screen;
+@import "../common/header.css" screen;
+@import "../common/footer.css" screen;
+
+.profile-content__user-photo {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.profile-content__user-name {
+  padding-top: 20px;
+}
+
+.profile-content__user-name h2 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.profile-content__user-data {
+  padding-top: 10px;
+  margin-bottom: 25px;
+}
+
+.profile-content__user-data li {
+  margin-bottom: -5px;
+}
+
+.profile-content__media-block {
+  background: #fff;
+  padding: 10px 20px;
+  margin-bottom: 25px;
+}
+
+.profile-content__media-block .profile-content__media-block-heading {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.profile-content__media-block .profile-content__media-block-heading i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.profile-content__media-block .profile-content__media-block-heading a {
+  color: #333;
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.profile-content__media-block .profile-content__media-block-heading a:hover {
+  color: #1a54e7;
+}
+
+.profile-content__media-block .profile-content__media-block-heading span {
+  cursor: pointer;
+}
+
+.profile-content__media-block .profile-content__media-block-item {
+  cursor: pointer;
+  font-size: 18px;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.profile-content__media-block .profile-content__media-block-item i {
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin-right: 5px;
+}
+
+.profile-content__media-block .profile-content__media-block-item:hover i {
+  color: #1a54e7;
+}
+
+.profile-content__media-block .profile-content__media-block-item span {
+  cursor: pointer;
+}
+
+.profile-content__media-block .profile-content__media-block-footer {
+  margin-top: 10px;
+}
+
+.profile-content__media-block .profile-content__media-block-footer a {
+  color: #666666;
+  font-size: 17px;
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.profile-content__media-block .profile-content__media-block-footer a:hover {
+  color: #1a54e7;
+}
+
+.profile-content__gallery-inner {
+  height: 100px;
+}
+
+.profile-content__gallery-inner .profile-content__gallary-item {
+  width: 20%;
+  height: 100%;
+}

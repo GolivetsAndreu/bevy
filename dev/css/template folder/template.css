@@ -1,0 +1,15 @@
+/* 1. Базовые стили
+	2. Шрифты
+	3. Стили для блока поста
+	4. стили для длока добавления поста
+	5. стили для хедера
+	6. стили для футера */
+
+@import "../common/base.css" screen;
+@import "../common/fonts.css" screen;
+@import "../common/post.css" screen;
+@import "../common/add-post.css" screen;
+@import "../common/header.css" screen;
+@import "../common/footer.css" screen;
+
+/* Styles */

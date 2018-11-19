@@ -1,0 +1,147 @@
+@import "../common/base.css" screen;
+@import "../common/fonts.css" screen;
+@import "../common/header.css" screen;
+@import "../common/footer.css" screen;
+.profile-settings {
+  background: #fff;
+  padding: 15px 0;
+}
+
+.profile-settings .profile-settings__heading h2 {
+  font-size: 22px;
+  font-weight: 600;
+  border-bottom: 2px solid silver;
+  padding-bottom: 15px;
+}
+
+.profile-settings .profile-settings__content .profile-settings__content-item {
+  border-bottom: 2px solid #f3f3f3;
+  padding: 20px 15px;
+}
+
+.profile-settings .profile-settings__content .profile-settings__content-item .profile-settings__content-item-heading h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.profile-settings .profile-settings__content .profile-settings__content-item .profile-settings__content-item-content {
+  padding-left: 30px;
+}
+
+.profile-settings .profile-settings__content .profile-settings__content-item .profile-settings__content-item-content .profile-settings__content-item-content-photo-wrap {
+  height: 180px;
+  width: 180px;
+  margin-bottom: 1px;
+}
+
+.profile-settings .profile-settings__content .profile-settings__content-item .profile-settings__content-item-content .profile-settings__content-item-content-photo-settings span {
+  font-size: 15px;
+  color: #666666;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.profile-settings .profile-settings__content .profile-settings__content-item .profile-settings__content-item-content .profile-settings__content-item-content-photo-settings span:hover {
+  color: #1a54e7;
+}
+
+.profile-settings .profile-settings__content .profile-settings__content-item .profile-settings__content-item-content .profile-settings__content-item-content-photo-new {
+  padding-left: 20px;
+}
+
+/*.profile-settings .profile-settings__content .profile-settings__content-item .profile-settings__content-item-content .profile-settings__content-item-content-photo-new .inputfile-pic {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}*/
+
+.profile-settings .profile-settings__content .profile-settings__content-item .profile-settings__content-item-content .profile-settings__content-item-content-photo-new .inputfile-pic + label {
+  font-size: 17px;
+  color: #fafafa;
+  background: #1a54e7;
+  cursor: pointer;
+  padding: 3px 10px;
+}
+
+.profile-settings .profile-settings__content .profile-settings__content-item .profile-settings__content-item-content .profile-settings__content-item-content-photo-new .inputfile-pic:focus + label,
+.profile-settings .profile-settings__content .profile-settings__content-item .profile-settings__content-item-content .profile-settings__content-item-content-photo-new .inputfile-pic + label:hover {
+  background-color: #1b641d;
+}
+
+.profile-settings .profile-settings__content .profile-settings__content-item .profile-settings__content-item-content .profile-settings__content-item-content-photo-new .inputfile-pic:focus + label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+.profile-settings .profile-settings__content .profile-settings__content-item .profile-settings__content-item-content .profile-settings__content-item-names-input {
+  padding: 6px 10px 6px 15px;
+  border: 2px solid #1a54e7;
+}
+
+.profile-settings .profile-settings__content .profile-settings__content-item .profile-settings__content-item-content .profile-settings__content-item-names-input:first-child {
+  margin-right: 20px;
+}
+
+.profile-settings .profile-settings__content .profile-settings__content-item .profile-settings__content-item-content .profile-settings__content-item-content-select-birth {
+  background: #1a54e7;
+  color: #fff;
+  padding: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.profile-settings .profile-settings__content .profile-settings__content-item .profile-settings__content-item-content .profile-settings__content-item-input {
+  padding: 3px 10px 3px 15px;
+  border: 1px solid silver;
+  font-size: 15px;
+}
+
+.profile-settings .profile-settings__content .profile-settings__content-item .profile-settings__content-item-content .profile-settings__content-item-content-confirm-for-show {
+  padding-left: 10px;
+  padding-top: 8px;
+}
+
+.profile-settings .profile-settings__content .profile-settings__content-item .profile-settings__content-item-content .profile-settings__content-item-content-confirm-for-show label {
+  font-size: 14px;
+  color: #666666;
+}
+
+.profile-settings .profile-settings__footer {
+  padding: 20px 0 10px 0;
+}
+
+.profile-settings .profile-settings__footer .profile-settings__save {
+  border: none;
+  background: #1a54e7;
+  color: #fafafa;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  padding: 5px 20px;
+}
+
+.profile-settings .profile-settings__footer .profile-settings__save:hover {
+  background: #31b434;
+}
+
+.input_error_active {
+  border: 2px solid red !important;
+}
+
+.input_error {
+  color: red;
+  font-size: 13px;
+  line-height: .8em;
+}

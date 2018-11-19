@@ -1,0 +1,14 @@
+#developing folder
+app/
+
+#laravel project
+dev-laravel/
+reg-log-restore/
+
+#node modules
+node_modules/
+
+#gulp files
+gulpfile.js
+package.json
+package-lock.json

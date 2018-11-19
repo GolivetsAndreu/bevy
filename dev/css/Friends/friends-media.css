@@ -1,0 +1,15 @@
+/*==========  Desktop First  ==========*/
+
+/* Large Screens */
+@media only screen and (max-width: 1200px) { 
+    .list-friends { display: block; }
+
+    .card-friend { margin: 10px auto; }
+
+    .card-friend:first-child { margin-top: 0; }
+
+    #searchOnFriendsPage { width: 80% }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) { #searchOnFriendsPage { width: 70% } }

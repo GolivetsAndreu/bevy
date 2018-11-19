@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		.container {
+			width: 900px;
+			margin: 20px auto;
+		}
+
+		.item {
+			display: flex;
+			justify-content: space-around;
+			margin-bottom: 20px;
+		}
+
+		.d-none { display: none; }
+
+		i {
+			cursor: pointer;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item">
+			<div class="heading">
+				<i class="fa fa-play"></i>
+				<i class="fa fa-pause d-none"></i>
+			</div>
+			<div class="content">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, quisquam.
+			</div>
+		</div>
+		<div class="item">
+			<div class="heading">
+				<i class="fa fa-play"></i>
+				<i class="fa fa-pause d-none"></i>
+			</div>
+			<div class="content">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, quisquam.
+			</div>
+		</div>
+		<div class="item">
+			<div class="heading">
+				<i class="fa fa-play"></i>
+				<i class="fa fa-pause d-none"></i>
+			</div>
+			<div class="content">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, quisquam.
+			</div>
+		</div>
+		<div class="item">
+			<div class="heading">
+				<i class="fa fa-play"></i>
+				<i class="fa fa-pause d-none"></i>
+			</div>
+			<div class="content">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, quisquam.
+			</div>
+		</div>
+	</div>
+	<script src="jquery-3.3.1.min.js"></script>
+	
+	<script>
+		
+		"use strict";
+
+		window.onload = function () {
+			var 
+				play  = $('.fa-play'),
+				pause = $('.fa-pause');
+
+			play.click(function() {
+				$(this).addClass('d-none');
+				$(this).next().removeClass('d-none');
+
+				play.not($(this)).removeClass('d-none');
+				pause.not($(this).next()).addClass('d-none');
+			});
+
+			pause.click(function() {
+				$(this).addClass('d-none');
+				$(this).prev().removeClass('d-none');
+			});
+		}
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+@import "../common/base.css" screen;
+@import "../common/fonts.css" screen;
+@import "../common/header.css" screen;
+@import "../common/footer.css" screen;
+.about {
+  background: #fff;
+  padding: 15px;
+}
+
+.about .about__hr {
+  display: block;
+  margin: 10px auto;
+  width: 20%;
+  border: none;
+  background: #ccc;
+  height: 2px;
+}
+
+.about .about__content .about__text {
+  padding: 20px 0 20px 0;
+  line-height: 1.4em;
+}
+
+.about .about__footer {
+  border-top: 2px solid #ccc;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.about .about__footer .about__footer-rights {
+  right: 0;
+  bottom: 0;
+  font-size: 14px;
+  color: #666666;
+}

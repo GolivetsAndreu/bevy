@@ -1,0 +1,22 @@
+/*==========  Desktop First  ==========*/
+@media only screen and (min-width: 1600px) {
+	.music-add{margin-right:80px;}
+	.music-card{display:block;}
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+	.music-add{margin-right:80px;}
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+	.music-add{margin-right:20px;}
+	.music-card{width:705px;}
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+	.music-add{margin-right:20px;}
+	.music-card{width:405px;}
+	.music-play{margin-left:3px;}
+	.music-name{margin-left:3px;}
+	.music-length{margin-right:3px;}
+}

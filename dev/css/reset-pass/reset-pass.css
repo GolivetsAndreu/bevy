@@ -1,0 +1,55 @@
+@import "../common/base.css" screen;
+@import "../common/fonts.css" screen;
+@import "../common/header.css" screen;
+@import "../common/footer.css" screen;
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 5px rgba(26, 84, 231, 0.2);
+            box-shadow: 0 0 5px rgba(26, 84, 231, 0.2);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 5px rgba(26, 84, 231, 0.9);
+            box-shadow: 0 0 5px rgba(26, 84, 231, 0.9);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 5px rgba(26, 84, 231, 0.2);
+            box-shadow: 0 0 5px rgba(26, 84, 231, 0.2);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 5px rgba(26, 84, 231, 0.2);
+            box-shadow: 0 0 5px rgba(26, 84, 231, 0.2);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 5px rgba(26, 84, 231, 0.9);
+            box-shadow: 0 0 5px rgba(26, 84, 231, 0.9);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 5px rgba(26, 84, 231, 0.2);
+            box-shadow: 0 0 5px rgba(26, 84, 231, 0.2);
+  }
+}
+
+.reset-password {
+	height: 100vh;
+	padding-top: 20px;
+}
+
+.reset-password__input {
+  padding: 9px 0 9px 15px;
+  border: 2px solid silver;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+  -o-transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+  transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+  font-size: 15px;
+}
+
+.reset-password__input:focus {
+  -webkit-animation: pulse 2s infinite ease-in-out;
+          animation: pulse 2s infinite ease-in-out;
+}

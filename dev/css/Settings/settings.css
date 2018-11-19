@@ -1,0 +1,153 @@
+@import "../common/base.css" screen;
+@import "../common/fonts.css" screen;
+@import "../common/header.css" screen;
+@import "../common/footer.css" screen;
+.settings {
+  background: #fff;
+  padding: 15px 0;
+}
+
+.settings .settings__heading h2 {
+  font-size: 22px;
+  font-weight: 600;
+  border-bottom: 2px solid silver;
+  padding-bottom: 15px;
+}
+
+.settings .settings__content .settings__content-item {
+  border-bottom: 2px solid #f3f3f3;
+  padding: 20px 15px;
+}
+
+.settings .settings__content .settings__content-item:last-child {
+  border-bottom: none;
+}
+
+.settings .settings__content .settings__content-item .settings__content-item-heading h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.settings .settings__content .settings__content-item .settings__content-item-content {
+  padding-left: 30px;
+}
+
+.settings .settings__content .settings__content-item .settings__content-item-content .settings__content-item-content-input-wrapper {
+  margin-bottom: 20px;
+}
+
+.settings .settings__content .settings__content-item .settings__content-item-content .settings__content-item-content-input-wrapper input {
+  padding: 6px 10px 6px 15px;
+  border: 2px solid #1a54e7;
+  display: block;
+}
+
+.settings .settings__content .settings__content-item .settings__content-item-content .settings__content-item-content-input-wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.settings .settings__content .settings__content-item .settings__content-item-content .settings__content-item-content-input-wrapper .fa-eye {
+  left: 230px;
+  top: 10px;
+  color: #1a54e7;
+  cursor: pointer;
+  opacity: .8;
+  visibility: hidden;
+}
+
+.settings .settings__content .settings__content-item .settings__content-item-content .settings__content-item-content-input-wrapper .fa-eye.show-password_active {
+  visibility: visible;
+}
+
+.settings .settings__content .settings__content-item .settings__content-item-content .settings__content-item-content-input-wrapper .fa-eye:hover {
+  opacity: 1;
+}
+
+.settings .settings__content .settings__content-item .settings__content-item-content .settings__content-item-content-input-wrapper .fa-eye.fa-eye_active {
+  opacity: 1;
+}
+
+.settings .settings__content .settings__content-item .settings__content-item-content .settings__content-item-content-save-pas {
+  padding-left: 20px;
+}
+
+.settings .settings__content .settings__content-item .settings__content-item-content .settings__content-item-content-save-pas button {
+  padding: 4px 20px;
+  background: #1a54e7;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.settings .settings__content .settings__content-item .settings__content-item-content .settings__content-item-content-save-pas button:hover {
+  background: #31b434;
+}
+
+.settings .settings__content .settings__content-item .settings__content-item-content .settings__content-item-content-del-wrapper-confirm {
+  padding-left: 10px;
+  padding-top: 2px;
+}
+
+.settings .settings__content .settings__content-item .settings__content-item-content .settings__content-item-content-del-wrapper-confirm label {
+  font-size: 13px;
+  color: #666666;
+  padding: 5px 0 0 5px;
+}
+
+.settings .settings__content .settings__content-item .settings__content-item-content .settings__content-item-id input {
+  margin-left: 5px;
+  padding: 0 0 0 5px;
+}
+
+.settings .settings__content .settings__content-item .settings__content-item-content .settings__content-item-content-save-id-wrap button {
+  padding: 4px 20px;
+  background: #1a54e7;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin-top: 10px;
+}
+
+.settings .settings__content .settings__content-item .settings__content-item-content .settings__content-item-content-save-id-wrap button:hover {
+  background: #31b434;
+}
+
+.settings .settings__footer {
+  padding: 20px 0 10px 0;
+}
+
+.settings .settings__footer .settings__save {
+  border: none;
+  background: #1a54e7;
+  color: #fafafa;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  padding: 5px 20px;
+}
+
+.settings .settings__footer .settings__save:hover {
+  background: #31b434;
+}
+
+.input_error_active {
+  border: 2px solid red !important;
+}
+
+.input_error {
+  color: red;
+  font-size: 13px;
+  line-height: .8em;
+}

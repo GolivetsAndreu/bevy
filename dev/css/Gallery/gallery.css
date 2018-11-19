@@ -1,0 +1,192 @@
+@import "../common/base.css" screen;
+@import "../common/fonts.css" screen;
+@import "../common/post.css" screen;
+@import "../common/add-post.css" screen;
+@import "../common/header.css" screen;
+@import "../common/footer.css" screen;
+
+.upload-photo {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 9999;
+}
+
+.upload-photo .upload-photo__close {
+  top: 20px;
+  right: 20px;
+}
+
+.upload-photo .upload-photo__close i {
+  color: #fafafa;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.upload-photo .upload-photo__wrapper {
+  background: #fff;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.upload-photo .upload-photo__wrapper .upload-photo__heading {
+  margin-bottom: 20px;
+}
+
+.upload-photo .upload-photo__wrapper .upload-photo__heading h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.upload-photo .upload-photo__wrapper .upload-photo__content .upload-photo__content-block {
+  margin-bottom: 20px;
+}
+
+.upload-photo .upload-photo__wrapper .upload-photo__content .upload-photo__content-block label {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.upload-photo .upload-photo__wrapper .upload-photo__content .upload-photo__content-block input[type="text"] {
+  padding: 5px 10px;
+  border: 2px solid silver;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.upload-photo .upload-photo__wrapper .upload-photo__content .upload-photo__content-block input[type="text"]:focus {
+  border: 2px solid #1a54e7;
+}
+
+.upload-photo .upload-photo__wrapper .upload-photo__content .upload-photo__content-block:last-child {
+  margin-bottom: 0;
+}
+
+.upload-photo .upload-photo__wrapper .upload-photo__footer {
+  padding-top: 20px;
+}
+
+.upload-photo .upload-photo__wrapper .upload-photo__footer button {
+  border: none;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 600;
+  background: #1a54e7;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  outline: none;
+  padding: 4px 10px;
+  color: #fafafa;
+}
+
+.upload-photo .upload-photo__wrapper .upload-photo__footer button:hover {
+  background: #31b434;
+}
+
+.ImageContainer {
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.buttonAdd {
+    background-color: #1a54e7; /* gray color */
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+    float: right;
+    text-align: center;
+    font-size: 16px;
+}
+
+.pop-up {
+  display: none;
+  background: #fafafa;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  background: rgba(0, 0, 0, .7);
+}
+
+.pop-Image {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+.commentPad {
+  padding: 40px 0 40px 40px;
+}
+
+.commentPad .post-comment-text {
+    padding-left: 50px;
+}   
+
+/* ----------------------- */
+
+.pop-up__wrapper {
+    background: #fff;
+    height: auto;
+    padding: 20px 20px 0 20px;
+    overflow-y: scroll;
+    height: inherit;
+}
+
+.pop-up__wrapper::-webkit-scrollbar { width:0px; }
+
+.reset_overflow { overflow: hidden; }
+
+.closePopUp-wrapper {
+    right: 30px;
+    top: 30px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.closePopUp {
+    cursor: pointer;
+    opacity: .7;
+}
+
+.post-comment { margin-bottom: 20px; }
+
+.closePopUp:hover { opacity: 1; }
+
+.delete-photo {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  color: #3f3f3d;
+  margin-top: 10px;
+}
+
+.delete-photo:hover {
+  color: #1a54e7;
+}

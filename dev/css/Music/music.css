@@ -1,0 +1,148 @@
+@import "../common/base.css" screen;
+@import "../common/fonts.css" screen;
+@import "../common/header.css" screen;
+@import "../common/footer.css" screen;
+.upload-song {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 9999;
+}
+
+.upload-song .upload-song__close {
+  top: 20px;
+  right: 20px;
+}
+
+.upload-song .upload-song__close i {
+  color: #fafafa;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.upload-song .upload-song__wrapper {
+  background: #fff;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.upload-song .upload-song__wrapper .upload-song__heading {
+  margin-bottom: 20px;
+}
+
+.upload-song .upload-song__wrapper .upload-song__heading h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.upload-song .upload-song__wrapper .upload-song__content .upload-song__content-block {
+  margin-bottom: 20px;
+}
+
+.upload-song .upload-song__wrapper .upload-song__content .upload-song__content-block label {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.upload-song .upload-song__wrapper .upload-song__content .upload-song__content-block input[type="text"] {
+  padding: 5px 10px;
+  border: 2px solid silver;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.upload-song .upload-song__wrapper .upload-song__content .upload-song__content-block input[type="text"]:focus {
+  border: 2px solid #1a54e7;
+}
+
+.upload-song .upload-song__wrapper .upload-song__content .upload-song__content-block:last-child {
+  margin-bottom: 0;
+}
+
+.upload-song .upload-song__wrapper .upload-song__footer {
+  padding-top: 20px;
+}
+
+.upload-song .upload-song__wrapper .upload-song__footer button {
+  border: none;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 600;
+  background: #1a54e7;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  outline: none;
+  padding: 4px 10px;
+  color: #fafafa;
+}
+
+.upload-song .upload-song__wrapper .upload-song__footer button:hover {
+  background: #31b434;
+}
+
+.music__add-song {
+  margin-bottom: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 600;
+  background: #1a54e7;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  outline: none;
+  padding: 4px 10px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  color: #fafafa;
+}
+
+.music__add-song:hover {
+  background: #31b434;
+}
+
+.music__item {
+  background: #fff;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+  -o-transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+  transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+}
+
+.music__item .music__item-heading {
+  padding-left: 10px;
+  font-weight: 600;
+  padding-top: 5px;
+  cursor: default;
+}
+
+.music__item .music__item-inner i {
+  top: 62px;
+  left: 36px;
+  color: #fff;
+  z-index: 999;
+  font-size: 10px;
+}
+
+.music__item .music__item-inner audio {
+  width: 100%;
+}
+
+.music__item .music__item-inner audio::-webkit-media-controls-panel {
+  background: #fff;
+}
+
+.music__item .music__item-inner audio::-webkit-media-controls-play-button {
+  cursor: pointer;
+}
+
+.music__item .music__item-inner audio::-webkit-media-controls-mute-button {
+  cursor: pointer;
+}

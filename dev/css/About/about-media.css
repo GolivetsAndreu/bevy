@@ -1,0 +1,5 @@
+@media only screen and (max-width: 480px) {
+  .about .about__footer .about__footer-rights {
+    display: none;
+  }
+}

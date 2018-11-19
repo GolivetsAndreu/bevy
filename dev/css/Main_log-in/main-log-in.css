@@ -1,0 +1,240 @@
+@import "../common/base.css" screen;
+@import "../common/fonts.css" screen;
+@import "../common/header.css" screen;
+@import "../common/footer.css" screen;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  line-height: 1.75;
+  background: #fafafa;
+}
+
+.pasfont {
+  font-family: 'Pacifico', sans-serif;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+div, a, span, input, textarea, button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input, textarea, button {
+  outline: none;
+}
+
+h1, h2, h3, h4, p, span {
+  cursor: default;
+  margin: 0;
+}
+
+ul, li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 5px rgba(26, 84, 231, 0.2);
+            box-shadow: 0 0 5px rgba(26, 84, 231, 0.2);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 5px rgba(26, 84, 231, 0.9);
+            box-shadow: 0 0 5px rgba(26, 84, 231, 0.9);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 5px rgba(26, 84, 231, 0.2);
+            box-shadow: 0 0 5px rgba(26, 84, 231, 0.2);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 5px rgba(26, 84, 231, 0.2);
+            box-shadow: 0 0 5px rgba(26, 84, 231, 0.2);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 5px rgba(26, 84, 231, 0.9);
+            box-shadow: 0 0 5px rgba(26, 84, 231, 0.9);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 5px rgba(26, 84, 231, 0.2);
+            box-shadow: 0 0 5px rgba(26, 84, 231, 0.2);
+  }
+}
+
+.log-in-main {
+  height: 100vh;
+  background: #1a54e7 url("../../img/Main_Log-in/first-bg.jpg") no-repeat center top/cover;
+  overflow: hidden;
+}
+
+.log-in-main__left {
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.75);
+  width: 40%;
+  -webkit-transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+  -o-transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+  transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+  overflow-x: scroll;
+}
+
+.log-in-main__left:-webkit-scrollbar {
+  width: 0;
+}
+
+.log-in-main__left:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.log-in-main__geom {
+  top: 0;
+  left: 5%;
+  color: #fafafa;
+  overflow: hidden;
+  width: 140px;
+}
+
+.log-in-main__geom .log-in-main__geom-vr {
+  height: 0;
+  width: 5px;
+  background: #fafafa;
+  -webkit-transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+  -o-transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+  transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+}
+
+.log-in-main__geom .log-in-main__geom-vr.log-in-main__vr_active {
+  height: 160px;
+}
+
+.log-in-main__geom span {
+  top: 40px;
+  left: -80px;
+  font-size: 30px;
+  -webkit-transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+  -o-transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+  transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+}
+
+.log-in-main__geom span.log-in-main__text_active {
+  left: 20px;
+}
+
+.log-in-main__right {
+  height: 100%;
+  color: #f6f6f6;
+  padding-bottom: 70px;
+}
+
+.log-in-main__right span {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.log-in-main__right h1 {
+  font-size: 100px;
+  letter-spacing: 7px;
+}
+
+.log-in-main__left-inner {
+  width: 430px;
+  padding-bottom: 70px;
+}
+
+.log-in-main__left-inner .log-in-main__left-heading {
+  font-size: 25px;
+  color: #030303;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.log-in-main__input {
+  padding: 5px 0 5px 15px;
+  border: 2px solid #1a54e7;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+  -o-transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+  transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+  width: 100%;
+}
+
+.log-in-main__form-block { margin-bottom: 15px; }
+
+.log-in-main__form-block:last-child { margin-bottom: 0; }
+
+.log-in-main__input:focus {
+  -webkit-animation: pulse 2s infinite ease-in-out;
+          animation: pulse 2s infinite ease-in-out;
+}
+
+.log-in-main__btn {
+  padding: 5px 20px;
+  background: #1a54e7;
+  color: #fafafa;
+  font-weight: 600;
+  font-size: 19px;
+  cursor: pointer;
+  margin-top: 25px;
+  border: none;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.log-in-main__btn:hover {
+  background: #0a33e7;;
+}
+
+.log-in-main__forgot-pass {
+  color: #1a54e7;
+  margin-top: 14px;
+}
+
+.log-in-main__first-user-link {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.fa-eye {
+  right: -25px;
+  color: #1a54e7;
+  top: 12px;
+  cursor: pointer;
+  opacity: .8;
+  visibility: hidden;
+}
+
+.fa-eye.show-password_active {
+  visibility: visible;
+}
+
+.fa-eye:hover {
+  opacity: 1;
+}
+
+.fa-eye.fa-eye_active {
+  opacity: 1;
+}
+
+.log-in-main__form-block {
+  width: 100%;
+}
+
+.log-in-main .footer { position: absolute; }
